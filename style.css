@@ -243,7 +243,7 @@ details > img {
   padding: 0;
 }
 
-#links-wrapper > ul > a {
+.link {
   line-height: 28px;
   text-decoration: none;
   color: #666;
@@ -251,7 +251,7 @@ details > img {
   transition: all 300ms ease;
 }
 
-#links-wrapper > ul > a:hover {
+.link:hover {
   color: black;
   transform: translateX(5px);
 }
