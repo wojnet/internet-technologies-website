@@ -169,6 +169,7 @@ details > img {
   justify-content: space-between;
   align-items: center;
   margin-inline: auto;
+  padding-inline: 15px;
 }
 
 #my-image {
@@ -254,6 +255,69 @@ details > img {
 .link:hover {
   color: black;
   transform: translateX(5px);
+}
+
+#tools-wrapper {
+  width: 100%;
+  max-width: 300px;
+  min-height: calc(100vh - 300px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  margin-inline: auto;
+  gap: 5px;
+  text-align: center;
+}
+
+#tools-wrapper > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#time-signature {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#bars {
+  width: 70px;
+}
+
+#time-signature > input[type="number"] {
+  width: 40px;
+}
+
+#image-box {
+  display: none;
+  position: relative;
+  z-index: 1000;
+  user-select: none;
+}
+
+#image-overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  transition: all 3s ease;
+}
+
+#overlay-image {
+  max-height: 80%;
+  max-width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 0 50px #0004;
 }
 
 footer {
